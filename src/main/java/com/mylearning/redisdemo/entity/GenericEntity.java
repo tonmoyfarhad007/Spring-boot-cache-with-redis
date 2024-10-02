@@ -24,7 +24,8 @@ public abstract class GenericEntity<T extends Serializable> extends Auditable<St
             parameters = {
                     @Parameter(
                             name = SequenceStyleGenerator.CONFIG_SEQUENCE_PER_ENTITY_SUFFIX,
-                            value = "_id_sequence"),
+                            value = "_id_sequence"
+                    ),
                     @Parameter(name = "initial_value", value = "1"),
                     @Parameter(name = "increment_size", value = "1")
             })
